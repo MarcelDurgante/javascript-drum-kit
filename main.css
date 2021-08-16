@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url(img/pic2.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.keyboard {
+  display: flex;
+  color: yellow;
+  background-color: transparent;
+  gap: 1rem;
+
+  size: 0.75rem
+}
+
+.keys-wrapper {
+  height: 5rem;
+  width: 8rem;
+  border: 1rem solid rgba(0, 0, 0)
+}
+
+.key-wrapper {
+
+    font-size: 1.5rem;
+}
+
+
+.key {
+  border-radius: 5%;
+  padding: 0.5em 0.5em;
+  height: 3rem;
+  width: 3rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 2.5rem;
+}
