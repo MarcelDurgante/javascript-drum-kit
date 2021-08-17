@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Drum Kit</title>
-    <link rel="stylesheet" href="main.css" />
-  </head>
 
-  <body>
-    <div class="keyboard">
-      <button class="key">
-        A
-        <div class="content">CLAP</div>
-      </button>
-      <button class="key">
-        S<br />
-        <div class="content">HIHAT</div>
-      </button>
-      <button class="key">
-        D<br />
-        <div class="content">KICK</div>
-      </button>
-      <button class="key">
-        F<br />
-        <div class="content">OPENHAT</div>
-      </button>
-      <button class="key">
-        G<br />
-        <div class="content">BOOM</div>
-      </button>
-      <button class="key">
-        H<br />
-        <div class="content">RIDE</div>
-      </button>
-      <button class="key">
-        J<br />
-        <div class="content">SNAKE</div>
-      </button>
-      <button class="key">
-        K<br />
-        <div class="content">TOM</div>
-      </button>
-      <button class="key">
-        L<br />
-        <div class="content">TINK</div>
-      </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Drum Kit</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <div class="keyboard">
+    <div data-key="65" class="key">
+      A<br />
+      <span data-key="65" class="sound">CLAP</span>
     </div>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+    <div data-key="83" class="key">
+      S<br />
+      <span data-key="83" class="sound">HIHAT</span>
+    </div>
+    <div data-key="68" class="key">
+      D<br />
+      <span data-key="68" class="sound">KICK</span>
+    </div>
+    <div data-key="70" class="key">
+      F<br />
+      <span data-key="70" class="sound">OPENHAT</span>
+    </div>
+    <div data-key="71" class="key">
+      G<br />
+      <span data-key="71" class="sound">BOOM</span>
+    </div>
+    <div data-key="72" class="key">
+      H<br />
+      <span data-key="72" class="sound">RIDE</span>
+    </div>
+    <div data-key="74" class="key">
+      J<br />
+      <span data-key="74" class="sound">SNAKE</span>
+    </div>
+    <div data-key="75" class="key">
+      K<br />
+      <span data-key="75" class="sound">TOM</span>
+    </div>
+    <div data-key="76" class="key">
+      L<br />
+      <span data-key="76" class="sound">TINK</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="/audios/417401__old-waveplay__drums-techno-clap-snare.wav"></audio>
+  <audio data-key="83" src="/audios/476006__saltbearer__snappyhat.wav"></audio>
+  <audio data-key="68" src="/audios/339437__phluidbox__super-low-bass-hit-kick-drum-wav.wav"></audio>
+  <audio data-key="70" src="/audios/75841__rossf__lm1-hat-open.wav"></audio>
+  <audio data-key="71" src="/audios/126531__sinkhole7__tink3d.wav"></audio>
+  <audio data-key="72" src="/audios/84234__josomebody__ride.wav"></audio>
+  <audio data-key="74" src="/audios/41531__jamius__snakeattackverbpuls.wav"></audio>
+  <audio data-key="75" src="/audios/209875__veiler__lo-tom.wav"></audio>
+  <audio data-key="76" src="/audios/126531__sinkhole7__tink3d.wav"></audio>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>
